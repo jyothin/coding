@@ -1,0 +1,6 @@
+# Operations
+* Traversing
+* Inserting
+* Deleting
+* Search
+* Update
