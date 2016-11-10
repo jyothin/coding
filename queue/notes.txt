@@ -1,0 +1,19 @@
+- Queue is an ordered list of elements of similar data types
+- is a FIFO structure
+- once a new element is inserted into the queue, all the elements inserted
+  before the new element in the queue must be removed, to remove the new
+element
+- peek() function is used to return the value of the first element without
+  dequeuing it
+- Can be implemented using an array, stack or linked list
+
+Applications:
+- Serving requests on a single shared resource, like a printer, CPU task
+  scheduling
+- call center phone queuing system
+- Handling interrupts in a real-time system
+
+Time complexity:
+- Enqueu: O(1)
+- Dequeue: O(1)
+- Size: O(1)

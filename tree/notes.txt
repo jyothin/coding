@@ -1,0 +1,17 @@
+# Properties
+* Left child must have a value < its parent's value and right
+  child must have a value > than its parent's value
+* Most operations on a BST take time directly proportional to the height of
+the tree, so it is desirable to keep the height small.
+* A binary tree with height h can contain at most 2^0+2^1+2^2+...+2^h =
+  2^(h+1)-1 nodes.
+* For a tree with n nodes and height h, n <= 2^(h+1)-1
+* For a tree with n nodes, h = floor(log(n))
+
+# Operations
+* Insert
+* Search
+* Preorder Traversal: root -> left -> right
+* Inorder Traversal: left -> root -> right
+* Postorder Traversal: left -> right -> root
+

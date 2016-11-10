@@ -1,0 +1,10 @@
+# Properties
+* Vertices
+* Edges: represented as a 2D matrix with 1 indicating an edge between the
+  notes
+
+# Operations
+* Traversing: DFS/BFS
+* Add vertex
+* Add Edge
+* Display Vertex

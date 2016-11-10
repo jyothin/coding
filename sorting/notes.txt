@@ -1,0 +1,9 @@
+# Inplace Sorting
+* Bubble sort
+
+# Not-inplace sorting
+* Merge sort
+
+# Stable sorting
+does not change the sequence of similar content in which they appear
+

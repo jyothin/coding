@@ -1,0 +1,5 @@
+Time complexity:
+= O(n^2) complexity
+
+Space complexity:
+Usage of 1 temp variable hence O(1)

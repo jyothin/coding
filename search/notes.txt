@@ -1,0 +1,5 @@
+# Time complexity
+* Linear search: O(n)
+* Binary search: O(logn)
+* Interpolation search: O(log(logn))
+

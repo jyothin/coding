@@ -1,0 +1,24 @@
+- Dynamic in nature i.e. memory is allocated when required
+- insertiona and deletion operations can be easily implemented
+- stacks and queues can be easily executed
+- linked list reduces the access time
+- extra memory for pointers is required
+- elements in a linked list cannot be accessed randomly
+- reverse traversing is difficult in linked list
+
+Applications:
+- Used to implement stacks, queues, trees, graphs
+- Insertion can happen at the beginning or end of the list
+- size of the linked list need not be known in advance
+
+Types:
+- Singly
+- Doubly
+- Circular
+
+# Operations
+* Insertion
+* Deletion - deletes an element at the beginning or end of the list
+* Display
+* Search
+* Delete - deletes an element using the given key

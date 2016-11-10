@@ -1,0 +1,16 @@
+Time complexity:
+n-1 comparisons in the 1st pass
+n-2 comparisons in the 2nd pass
+n-3 comparisons in the 3rd pass
+...
+3   comparisons in the n-3 pass
+2   comparisons in the n-2 pass
+1   comparisons in the n-1 pass
+
+(n-1)+(n-2)+(n-3)+...+3+2+1
+= (n-1)*(n-1+1)/2
+= (n-1)*n/2
+= O(n^2) complexity
+
+Space complexity:
+Usage of 1 temp variable hence O(1)

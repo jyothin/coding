@@ -1,0 +1,13 @@
+Properties:
+- LIFO type
+- push to insert at top of stack, pop to delete from top of stack
+- overflow => competely full, underflow => completly empty
+
+Applications:
+- Reversing a word
+
+Time complexity:
+- Push: O(1)
+- Pop: O(1)
+- Top: O(1)
+- Search: O(n)
