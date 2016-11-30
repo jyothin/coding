@@ -1,9 +1,0 @@
-http://www.glassdoor.ca
-http://www.careercup.com/
-http://www.geeksforgeeks.org/
-http://leetcode.com/
-https://www.hackerrank.com/
-http://www.topcoder.com/
-
-https://www.tutorialspoint.com/data_structures_algorithms
-http://www.studytonight.com/data-structures/merge-sort
