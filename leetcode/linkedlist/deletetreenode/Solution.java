@@ -1,4 +1,4 @@
-package deletenode;
+package deletetreenode;
 
 import java.util.LinkedList;
 

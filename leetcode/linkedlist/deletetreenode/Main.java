@@ -1,6 +1,6 @@
-package deletenode;
+package deletetreenode;
 
-import deletenode.Solution.ListNode;
+import deletetreenode.Solution.ListNode;
 
 public class Main {
 

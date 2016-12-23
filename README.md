@@ -1,4 +1,4 @@
-Coding practice
+# Coding practice
 
 ## Asymptotic Analysis
 ### Notation
@@ -13,14 +13,14 @@ Coding practice
 * Theta: lie in both Big Oh and Big Omega
 
 ## Common Asymptotic Notations
-O(1) -> constant
-O(logn) -> logarithmic
-O(n) -> linear
-O(nlogn) -> nlogn
-O(n^2) -> quadratic
-O(n^3) -> cubic
-n^O(1) -> polynomial
-2^O(n) -> exponential
+* O(1) -> constant
+* O(logn) -> logarithmic
+* O(n) -> linear
+* O(nlogn) -> nlogn
+* O(n^2) -> quadratic
+* O(n^3) -> cubic
+* n^O(1) -> polynomial
+* 2^O(n) -> exponential
 
 O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(e^n) < O(n!) < O(n^n)
 
@@ -99,3 +99,4 @@ They are implementation independent
 * https://www.tutorialspoint.com/data_structures_algorithms
 * http://www.studytonight.com/data-structures/merge-sort
 * http://www.studytonight.com/data-structures/introduction-to-sorting
+* https://leetcode.com
