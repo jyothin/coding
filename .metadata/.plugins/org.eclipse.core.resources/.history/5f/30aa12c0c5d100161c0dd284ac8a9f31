@@ -1,0 +1,23 @@
+package p238_productexceptself;
+
+public class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int[] output = new int[nums.length];
+        product(nums, output, 0);
+    }
+    
+    public void product(int[] nums, int[] output, int index) {
+
+    	output[index] = output[index-1] * nums[index-1];
+    	
+    	for (int i=0; i<index-1; i++) {
+    		output[i] = output[i] * nums[index];
+    	}
+    	
+    	if (index < nums.length) {
+    		product(nums, output, ++index);
+    	} else {
+    		return;
+    	}
+    }
+}

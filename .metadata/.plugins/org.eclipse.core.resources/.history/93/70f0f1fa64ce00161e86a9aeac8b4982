@@ -1,0 +1,24 @@
+package inordersuccessor;
+
+public class Solution {
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+    	return inorder(root, p);
+    }
+    
+    public TreeNode inorder(TreeNode root, TreeNode p) {
+    	if (root != null) {
+			inorder(root.left, p);
+			//System.out.println(p.val);
+			if (root.val == p.val) { return inorder(root.right, p); }
+			else { inorder(root.right, p);
+    	}
+		return null;
+    }
+    
+    public class TreeNode {
+    	int val;
+    	TreeNode left;
+    	TreeNode right;
+    	TreeNode(int x) {val = x;}
+    }
+}

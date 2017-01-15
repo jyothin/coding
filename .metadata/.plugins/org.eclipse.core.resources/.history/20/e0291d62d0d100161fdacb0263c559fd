@@ -1,0 +1,67 @@
+package lfucache;
+
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+
+public class LFUCache {
+	int capacity;
+	Node head;
+	HashMap<Integer, Integer> vCache;
+	HashMap<Integer, Node> nCache;
+	
+	public LFUCache (int capacity) {
+		this.capacity = capacity;
+		vCache = new HashMap<Integer, Integer>();
+		nCache = new HashMap<Integer, Node>();
+	}
+	
+	public void increaseCount(int key) {
+		Node node = nCache.get(key);
+		node.keys.remove(key);
+		
+		if (node.next == null) {
+			node.next = new Node(node.count+1);
+			node.next.prev = node;
+			node.next.keys.add(key);
+		} else if (node.next.count == node.count+1) {
+			node.next.keys.add(key);
+		} else {
+			Node tNode = new Node(node.count+1);
+			tNode.keys.add(key);
+			tNode.prev = node;
+			tNode.next = node.next;
+			node.next.prev = tNode;
+			node.next = tNode;
+		}
+		nCache.put(key, node.next);
+		if (node.keys.size() == 0) {
+			remove(node);
+		}
+	}
+	
+	public int get(int key) {
+		if (vCache.containsKey(key)) {
+			increaseCount(key);
+			return vCache.get(key);
+		} else {
+			return -1;
+		}
+	}
+	
+	public void set(int key, int key) {
+		
+	}
+	
+	class Node {
+		int count = 0;
+		LinkedHashSet<Integer> keys = null;
+		Node prev;
+		Node next;
+		public Node (int count) {
+			this.count = count;
+			keys = new LinkedHashSet<Integer>();
+			prev = null;
+			next = null;
+		}
+	}
+}

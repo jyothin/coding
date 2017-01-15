@@ -1,0 +1,39 @@
+package p146_lrucache;
+
+import java.util.HashMap;
+
+public class LRUCache {
+	HashMap<Integer, Node> cache;
+	int capacity;
+	int size;
+	
+	public LRUCache(int capacity) {
+		this.capacity = capacity;
+		cache = new HashMap<Integer, Node>(capacity);
+	}
+	
+	public int get(int key) {
+		if (cache.containsKey(key)) {
+			return cache.get(key);
+		}
+	}
+	
+	public void set(int key, int value) {
+		if (size < capacity) {
+			cache.put(key, value);
+		}
+		
+	}
+	
+	public class Node {
+		int key;
+		int value;
+		Node pre;
+		Node next;
+		public Node(int key, int value) {
+			this.key = key;
+			this.value = value;
+		}
+	}
+
+}

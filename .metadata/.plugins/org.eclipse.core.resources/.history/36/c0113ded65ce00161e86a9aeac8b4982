@@ -1,0 +1,31 @@
+package inordersuccessor;
+
+import java.util.LinkedList;
+
+public class Solution {
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+    	while (root.val != p.val) {
+    		if (p.val < root.val) { root = root.left; }
+    		else { root = root.right; }
+    	}
+    	LinkedList<TreeNode> queue;
+    	inorder(root.right, queue);
+    	return queue.pop();
+    }
+    
+    public TreeNode inorder(TreeNode root, LinkedList<TreeNode> queue) {
+    	if (root != null) {
+			inorder(root.left, queue);
+			queue.add(root);
+			inorder(root.right, queue);
+    	}
+		return null;
+    }
+    
+    public class TreeNode {
+    	int val;
+    	TreeNode left;
+    	TreeNode right;
+    	TreeNode(int x) {val = x;}
+    }
+}

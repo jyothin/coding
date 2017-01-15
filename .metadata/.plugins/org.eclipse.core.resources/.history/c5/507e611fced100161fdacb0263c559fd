@@ -1,0 +1,5 @@
+package lfucache;
+
+public class LFUCache {
+
+}

@@ -1,7 +1,5 @@
 package lengthoflis;
 
-import java.util.Set;
-
 public class Solution {
 	public int lengthOfLIS(int[] nums) {
 		int l=0;

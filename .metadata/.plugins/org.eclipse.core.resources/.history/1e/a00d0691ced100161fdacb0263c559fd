@@ -1,0 +1,16 @@
+package lfucache;
+
+public class LFUCache {
+	public LFUCache (int capacity) {
+		this.capacity = capacity;
+		
+	}
+	
+	public int get(int key) {
+		
+	}
+	
+	public void set(int key, int key) {
+		
+	}
+}
